@@ -1,38 +1,38 @@
 .App {
-  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: hsla(270, 20%, 96%, .6);
+  height: 100vh;
+  width: 100%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ilustration{
+  position: relative;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.background-figure{
+  border-radius:  0 0 300px 300px;
+  height: 570px;
+  width: 480px;
+  margin-left: -80px;
+  background-image: linear-gradient(to right top, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.ilustration__cellphone{
+  position: absolute;
+  width: 230px;
+  height: 440px;
+  background-color: white;
+  top: 100px;
+  left: 340px;
+  border-radius: 25px;
 }
-
-.App-link {
-  color: #61dafb;
+.app-description{
+  position: relative;
+  overflow: hidden;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.background-figure--inverted-grey{
+  background-image: none;
+  position: absolute;
+  background-color: hsla(270, 20%, 96%);
+  transform: rotateZ(180deg);
+  bottom: 0;
+  right: -180px;
 }
