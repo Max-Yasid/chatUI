@@ -7,6 +7,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+:root{
+  --main-color-1: hsl(264, 100%, 61%);
+  --main-color-2: hsl(293, 100%, 63%);
+  --secondary-color: hsl(270, 20%, 96%);
+  /* fonts */
+  --main-font: 'Rubik', sans-serif;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

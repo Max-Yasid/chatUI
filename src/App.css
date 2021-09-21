@@ -13,7 +13,7 @@
   height: 570px;
   width: 480px;
   margin-left: -80px;
-  background-image: linear-gradient(to right top, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+  background-image: linear-gradient(to right top, var(--main-color-1), var(--main-color-2));
 }
 .ilustration__cellphone{
   position: absolute;
@@ -27,11 +27,30 @@
 .app-description{
   position: relative;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.app-description__text{
+  position: relative;
+  z-index: 1;
+  width: 445px;
+  font-family: var(--main-font);
+}
+.app-description__title{
+  font-weight: 500;
+  font-size: 2em;
+  line-height: 1;
+  color: hsl(271, 36%, 24%);
+}
+.app-description__description{
+  font-weight: 400;
+  line-height: 1.7;
+  color: hsl(270, 7%, 64%);
 }
 .background-figure--inverted-grey{
   background-image: none;
   position: absolute;
-  background-color: hsla(270, 20%, 96%);
+  background-color: var(--secondary-color);
   transform: rotateZ(180deg);
   bottom: 0;
   right: -180px;
