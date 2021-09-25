@@ -1,11 +1,14 @@
 import './App.css';
+import Cellphone from './components/cellphone';
 
 function App() {
   return (
     <main className="App">
       <section className="ilustration">
         <div className="background-figure"></div>
-        <div className="ilustration__cellphone"></div>
+        <div className="ilustration__cellphone-container">
+          <Cellphone />
+        </div>
       </section>
       <section className="app-description">
         <div className="app-description__text">
