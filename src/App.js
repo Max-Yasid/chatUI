@@ -6,7 +6,7 @@ import { faUsers } from '@fortawesome/free-solid-svg-icons';
 import io from "socket.io-client";
 import { useState } from 'react/cjs/react.development';
 
-const socket = io.connect('http://localhost:4000');
+const socket = io.connect('https://chat-app-backed.herokuapp.com');
 function App() {
   const [userCounter, setUserCounter] = useState(1);
   socket.on("newUserConnected", (users_quantity) => {
