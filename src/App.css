@@ -52,6 +52,12 @@
   line-height: 1.7;
   color: hsl(270, 7%, 64%);
 }
+.users-counter-container{
+  color: hsl(271, 24%, 46%);
+}
+.users-counter{
+
+}
 .background-figure--inverted-grey{
   background-image: none;
   position: absolute;

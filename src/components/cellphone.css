@@ -1,0 +1,220 @@
+.cellphone{
+    width: 230px;
+    height: 453px;
+    background-color: white;
+    top: 100px;
+    left: 350px;
+    border-radius: 25px;
+    display: grid;
+    place-items: center;
+    box-shadow: 0px 20px 50px rgba(0,0,0,.15);
+    z-index: 1;
+}
+.cellphone__background{
+    width: 215px;
+    height: 438px;
+    border-radius: 20px;
+    background-color: var(--secondary-color);
+}
+.cellphone__header{
+    border-radius: 25px 25px 5px 5px;
+    background-image: linear-gradient(to right, var(--main-color-1), var(--main-color-2));
+    height: 13%;
+}
+.cellphone__top-bar{
+    background-color: white;
+    height: 17px;
+    width: 55%;
+    margin: 0 auto;
+    border-radius: 0 0 14px 14px;
+}
+.cellphone__header-content{
+    display: flex;
+    align-items: center;
+    height: calc(100% - 17px);
+}
+.cellphone__back{
+    width: 9%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.cellphone__user-info{
+    height: 100%;
+    width: 76%;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    font-family: var(--main-font);
+}
+.cellphone__photo-side{
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+.cellphone__photo-container{
+    border-radius: 200px;
+    border: 1.5px solid white;
+    overflow: hidden;
+    width: 23px;
+    height: 23px;
+}
+.cellphone__user-info-text{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.cellphone__username{
+    color: white;
+    font-size: 11px;
+    margin: 0;
+    color: var(--secondary-color);
+}
+.cellphone__user-status{
+    font-size: 8px;
+    margin: 0;
+    color: hsl(276, 100%, 81%);
+}
+.cellphone__more{
+    width: 15%;
+    display: grid;
+    place-items: center;
+}
+.header-icon{
+    color: white;
+    font-size: 13px;
+}
+/* MESSAGE BOX */
+.cellphone__messages{
+    height: 76%;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-bottom: 0;
+}
+div[data-simplebar=init]{
+    height: 100%;
+}
+.cellphone__messages .simplebar-scrollbar:before{
+    background: hsl(272, 45%, 20%) !important;
+}
+.cellphone__message-container{
+    display: flex;
+    margin: 8px 0;
+}
+.cellphone__message-container:last-child > p{
+    margin-bottom: 0;
+}
+.cellphone__message-container--right{
+    justify-content: flex-end;
+}
+.cellphone__message-container--marginTop{
+    margin-top: 14px;
+}
+.cellphone__photo{
+    border-radius: 8px;
+}
+.walk-price-label__price{
+    color: white;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+.walk-price-label{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 16% 64% 20%;
+}
+.walk-price-label__input{
+    display: none;
+}
+.walk-price-label__checkmark{
+    display: inline-block;
+    height: 11px;
+    width: 11px;
+    background-color: transparent;
+    border: 1px solid hsl(289, 100%, 72%);
+    border-radius: 90px;
+    text-align: center;
+    margin: 0;
+}
+.walk-price-label__checkmark:after{
+    content: "";
+    display: none;
+    height: 6px;
+    width: 6px;
+    border-radius: 90px;
+    background-color: hsl(289, 100%, 85%);
+}
+.walk-price-label__input:checked ~ .walk-price-label__checkmark:after{
+    display: inline-block;
+}
+.walk-price-label__description{
+    display: flex;
+    align-items: center;
+    font-size: .9em;
+}
+
+/* SEND MESSAGE BOX (FOOTER) */
+.cellphone__footer{
+    height: 11%;
+    padding: 0 7px;
+    border-radius: 0 0 25px 25px;
+    box-sizing: border-box;  
+    display: flex;
+    align-items: center; 
+}
+.cellphone__send{
+    display: grid;
+    height: 30px;
+    background-color: white;
+    border-radius: 50px;
+    grid-template-columns: 85% 15%;
+    width: calc(100%);
+}
+.cellphone__input-container{
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+.cellphone__input{
+    box-sizing: border-box;
+    width: 99%;
+    border-radius: 25px;
+    height: 85%;
+    border: none;
+    padding: 0 10px;
+    display: flex;
+    font-size: .7em;
+    font-family: var(--main-font);
+    color: black;
+}
+input:focus{
+    outline: none;
+}
+::placeholder{
+    color: hsl(206, 6%, 79%);
+}
+.cellphone__btnSend-container{
+    display: grid;
+    place-items: center;
+}
+.cellphone__btnSend{
+    background-color: hsl(271, 36%, 24%);
+    border: none;
+    border-radius: 100px;
+    display: grid;
+    place-items: center;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+/* SCROLLBAR CUSTOMIZATION */
+@media only screen and (max-width: 375px){
+    .cellphone{
+        transform: scale(.9,.9);
+    }
+}
