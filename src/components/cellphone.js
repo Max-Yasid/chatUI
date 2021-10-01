@@ -1,8 +1,6 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './cellphone.css';
 import styled, { css } from 'styled-components';
-import { useState } from 'react';
-import { useEffect, useRef } from 'react';
 import SimpleBarReact from "simplebar-react";
 import "simplebar/src/simplebar.css";
 
@@ -105,12 +103,12 @@ export default React.memo(function Cellphone({ socket }){
                 <section className="cellphone__messages">
                     <SimpleBarReact ref={ simpleBarRef } style={{ maxHeight: "100%", padding: "1px 8px 0px 8px", margin: 0 }}>
                         <div className="cellphone__message-container">
-                            <Message>
+                            <Message isMessageFromAnotherPerson>
                                 That sounds great. I’d be happy with that.
                             </Message>
                         </div>
                         <div className="cellphone__message-container">
-                            <Message>
+                            <Message isMessageFromAnotherPerson>
                                 Could you send over some pictures of your dog, please?
                             </Message>
                         </div>
@@ -120,24 +118,24 @@ export default React.memo(function Cellphone({ socket }){
                                 cellphone__message-container--right 
                                 cellphone__message-container--marginTop"
                         >
-                            <Message isMessageFromAnotherPerson isMessageAnImage>
+                            <Message isMessageAnImage>
                                 <img src={dog1} alt="dog" width={35} className="cellphone__photo" />
                                 <img src={dog2} alt="dog" width={35} className="cellphone__photo" />
                                 <img src={dog3} alt="dog" width={35} className="cellphone__photo" />
                             </Message>
                         </div>
                         <div className="cellphone__message-container cellphone__message-container--right">
-                            <Message isMessageFromAnotherPerson>
+                            <Message>
                                 Here are a few pictures. She’s a happy girl!    
                             </Message>
                         </div>
                         <div className="cellphone__message-container cellphone__message-container--right">
-                            <Message isMessageFromAnotherPerson>
+                            <Message>
                                 Can you make it?
                             </Message>
                         </div>
                         <div className="cellphone__message-container cellphone__message-container--marginTop">
-                            <Message>
+                            <Message isMessageFromAnotherPerson>
                                 She looks so happy! The time we discussed works. How long shall I take her out for?
                             </Message>
                         </div>
