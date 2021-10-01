@@ -1,3 +1,11 @@
+# Frontend Mentor - Chat app CSS illustration
+
+![Design preview for the Chat app CSS illustration coding challenge](./public/design/desktop-preview.jpg)
+
+# Live Demo
+
+https://chat-ui-sigma.vercel.app/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
