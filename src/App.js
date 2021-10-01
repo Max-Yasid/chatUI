@@ -4,7 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUsers } from '@fortawesome/free-solid-svg-icons';
 
 import io from "socket.io-client";
-import { useState } from 'react/cjs/react.development';
+import { useState } from 'react';
+
 
 const socket = io.connect('https://chat-app-backed.herokuapp.com');
 function App() {

@@ -1,7 +1,7 @@
 import React from 'react';
 import './cellphone.css';
 import styled, { css } from 'styled-components';
-import { useState } from 'react/cjs/react.development';
+import { useState } from 'react';
 import { useEffect, useRef } from 'react';
 import SimpleBarReact from "simplebar-react";
 import "simplebar/src/simplebar.css";
